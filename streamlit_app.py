@@ -3,7 +3,11 @@ import pandas as pd
 import re
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
+import nltk
 import joblib
+
+# Pastikan stopwords diunduh jika belum ada
+nltk.download('stopwords')
 
 # Fungsi Preprocessing
 def preprocess_text(text):
